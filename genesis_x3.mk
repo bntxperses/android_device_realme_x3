@@ -20,10 +20,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/realme/x3/device.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/genesis/config/common_full_phone.mk)
+
+# GenesisOS stuff.
+GENESIS_MAINTAINER := Perses
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier
-PRODUCT_NAME := lineage_x3
+PRODUCT_NAME := genesis_x3
 PRODUCT_DEVICE := x3
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme X3 / SuperZoom
@@ -32,4 +37,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        BuildDesc="qssi-user 12 SKQ1.211113.001 1658765450117 release-keys"
+        BuildDesc="qssi-user 12 SKQ1.211113.001 1658765450117 release-keys" \
+        BuildFingerprint=realme/RMX2085/RMX2085L1:12/SKQ1.210216.001/Q.202209152050:user/release-keys

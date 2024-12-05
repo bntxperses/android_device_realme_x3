@@ -13,9 +13,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# Inherit dev keys for signing builds
--include vendor/lineage-priv/keys/keys.mk
-
 # Inherit updatable APEX
 OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
