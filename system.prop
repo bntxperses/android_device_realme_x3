@@ -33,6 +33,8 @@ debug.cpurend.vsync=false
 
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.systemservercompilerfilter=speed 
+dalvik.vm.systemuicompilerfilter=speed 
 
 # Graphics
 debug.sf.enable_gl_backpressure=false
