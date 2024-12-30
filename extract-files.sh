@@ -78,13 +78,16 @@ function blob_fixup() {
             grep -q libcamera_metadata_shim.so "${2}" || "${PATCHELF}" --add-needed libcamera_metadata_shim.so "${2}"
             ;;
 	odm/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service)
-	    patchelf --add-needed "libshim.so" "${2}"
+	$PATCHELF_TOOL --add-needed "libshim.so" "${2}"
             ;;
         vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib/libstagefright_soft_ac4dec.so | \
         vendor/lib/libstagefrightdolby.so | vendor/lib64/libstagefright_soft_ddpdec.so | \
         vendor/lib64/libdlbdsservice.so | vendor/lib64/libstagefright_soft_ac4dec.so | vendor/lib64/libstagefrightdolby.so)
         $PATCHELF_TOOL --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
 	    ;;
+        odm/lib64/libwvhidl.so | odm/lib64/mediadrm/libwvdrmengine.so)
+        $PATCHELF_TOOL --add-needed "libcrypto_shim.so" "${2}"
+           ;;
     esac
 }
 
