@@ -24,7 +24,6 @@ genfscon proc /sys/kernel/sched_upmigrate                                  u:obj
 genfscon proc /sys/kernel/sched_downmigrate                                u:object_r:proc_sched:s0
 
 # Wakeup
-genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/wakeup                                                                                                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c8c000.qcom,qup_uart/tty/ttyHS0/power/wakeup                                                                                                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800/wakeup                                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.qcom,spmi:qcom,pm8150l@4:qcom,power-on@800/wakeup                                                     u:object_r:sysfs_wakeup:s0
