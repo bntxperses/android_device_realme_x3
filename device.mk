@@ -159,6 +159,7 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0.vendor
 
 PRODUCT_PACKAGES += \
+    gralloc.qcom \
     hwcomposer.qcom \
     libdisplayconfig.qti \
     libqdMetaData \
