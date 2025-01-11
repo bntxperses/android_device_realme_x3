@@ -112,7 +112,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
- 
+
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
@@ -159,8 +159,7 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0.vendor
 
 PRODUCT_PACKAGES += \
-    gralloc.msmnile \
-    hwcomposer.msmnile \
+    hwcomposer.qcom \
     libdisplayconfig.qti \
     libqdMetaData \
     libqdMetaData.system \
