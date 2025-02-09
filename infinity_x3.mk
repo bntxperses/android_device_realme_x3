@@ -20,15 +20,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/realme/x3/device.mk)
-$(call inherit-product, vendor/genesis/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # GenesisOS stuff.
-GENESIS_MAINTAINER := Perses
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := "Perses | 愛"
+WITH_GAPPS := true
+TARGET_SHIPS_FULL_GAPPS := true
+TARGET_BUILD_GOOGLE_TELEPHONY := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier
-PRODUCT_NAME := genesis_x3
+PRODUCT_NAME := infinity_x3
 PRODUCT_DEVICE := x3
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme X3 / SuperZoom
