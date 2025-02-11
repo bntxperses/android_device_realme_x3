@@ -161,8 +161,7 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0.vendor
 
 PRODUCT_PACKAGES += \
-    gralloc.msmnile \
-    hwcomposer.msmnile \
+    hwcomposer.qcom \
     libdisplayconfig.qti \
     libqdMetaData \
     libqdMetaData.system \
