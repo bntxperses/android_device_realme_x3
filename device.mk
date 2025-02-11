@@ -155,8 +155,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0 \
     vendor.qti.hardware.display.mapper@4.0.vendor \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
+    vendor.qti.hardware.memtrack-service \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor
 
@@ -166,8 +165,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libqdMetaData \
     libqdMetaData.system \
-    libvulkan \
-    memtrack.msmnile
+    libvulkan
 
 # Fastbootd
 PRODUCT_PACKAGES += \
