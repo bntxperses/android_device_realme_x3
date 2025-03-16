@@ -262,8 +262,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    NfcNci \
-    SecureElement \
     Tag
 
 # Neuralnetworks
