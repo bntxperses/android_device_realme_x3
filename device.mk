@@ -290,6 +290,7 @@ PRODUCT_PACKAGES += \
     SettingsRes \
     SystemUIRes \
     NoCutoutOverlay \
+    NcmTetheringOverlay \
     NotchBarKillerRes \
     WifiRes
 
